@@ -36,7 +36,6 @@ class UserController extends Controller {
         $input['last_logged_in'] = Carbon::now();
 
         $User = new User();
-
         $User->username = $input['username'];
         $User->gender = $input['gender'];
         $User->title = $input['title'];
@@ -62,6 +61,8 @@ class UserController extends Controller {
     }
 
     public function update(User $user, UserRequest $userRequest) {
+        // TODO Ignore password change on update if password is not filled
+
         $user->update($userRequest->all());
         return redirect('cms/user');
     }
