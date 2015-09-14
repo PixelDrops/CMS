@@ -18,9 +18,12 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $primaryKey = 'user_id';
 
     protected $fillable = ['username', 'gender', 'title', 'firstname', 'lastname', 'display_name', 'personal_photo',
-        'email', 'password', 'active'];
+        'email', 'password', 'active','last_logged_in'];
 
     protected $hidden = ['user_id'];
+
+    protected $dates = ['last_logged_in'];
+
 
     public function blogPosts() {
         return $this->hasMany('App\BlogPost', 'author', 'user_id');

@@ -43,9 +43,7 @@ class BlogPostController extends Controller {
         $BlogPost->published_at = Carbon::createFromFormat('Y-m-d H:i', $input['published_at'] . ' ' . $input['published_at_time']);
 
        \Auth::user()->blogPosts()->save($BlogPost);
-       flash()->overlay("GG","Your blog post has been created");
-
-
+       flash()->success("Your blog post has been created");
 
         return redirect('cms\blog');
     }
@@ -55,7 +53,6 @@ class BlogPostController extends Controller {
     }
 
     public function update(BlogPost $blogPost, BlogPostRequest $request) {
-
         $blogPost->update($request->all());
         return redirect('cms\blog');
     }

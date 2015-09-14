@@ -3,6 +3,10 @@
     {!!Form::text('username', null,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
+    {!!Form::label('email', 'Email: ') !!}
+    {!!Form::text('email', null,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
     {!!Form::label('gender', 'Gender: ') !!}
     {!!Form::select('gender', array('M' => 'Male', 'F' => 'Female'),['class'=> 'form-control']) !!}
 </div>
@@ -29,16 +33,16 @@
     {!!Form::file('personal_photo', null,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
-    {!!Form::label('email', 'Email: ') !!}
-    {!!Form::file('email', null,['class'=> 'form-control']) !!}
-</div>
-<div class="form-group">
     {!!Form::label('password', 'Password : ') !!}
     {!!Form::password('password', null,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
-    {!!Form::label('confirm_password', 'Confirm Password : ') !!}
-    {!!Form::password('confirm_password', null,['class'=> 'form-control']) !!}
+    {!!Form::label('password_confirmation', 'Confirm Password : ') !!}
+    {!!Form::password('password_confirmation', null,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!!Form::label('active', 'User Active ') !!}
+    {!!Form::checkbox('active', true,['class'=> 'form-control']) !!}
 </div>
 
 <div class="form-group">
