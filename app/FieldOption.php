@@ -9,7 +9,7 @@ class FieldOption extends Model {
 
     protected $primaryKey = 'option_id';
 
-    protected $fillable = ['name','description','url_friendly','order','enabled'];']'
+    protected $fillable = ['name','description','url_friendly','order','enabled'];
 
     protected $hidden = ['field_option_type','option_id'];
 

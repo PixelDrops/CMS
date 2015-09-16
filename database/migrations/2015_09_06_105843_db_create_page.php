@@ -21,6 +21,7 @@ class DbCreatePage extends Migration {
             $table->longText('content');
             $table->mediumText('description');
             $table->mediumText('keyword');
+            $table->dateTime('published_at');
             $table->timestamps();
         });
 

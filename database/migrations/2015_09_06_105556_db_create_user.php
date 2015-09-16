@@ -27,6 +27,14 @@ class DbCreateUser extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        DB::table('user')->insert(
+            array(
+                'gender'=> 'M',
+                'email' => 'stevoo82@gmail.com',
+                'password' => bcrypt('test'),
+            )
+        );
     }
 
     /**

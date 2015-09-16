@@ -47,4 +47,4 @@
 
 <div class="form-group">
     {!!Form::submit($buttonText, ['class'=> 'btn btn-primary form-control']) !!}
-</div>
+</div>/

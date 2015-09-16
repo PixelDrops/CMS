@@ -10,7 +10,7 @@ All Users
             {{$user->user_id}} -
             {{$user->firstname}} -
             {{$user->lastname}} -
-            {{$user->email}} - <a href="user/{{$user->user_id}}/edit">Edit</a>
+            {{$user->email}} - <a href="{{$user->user_id}}/edit">Edit</a>
         </article>
     @endforeach
 @stop

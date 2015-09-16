@@ -17,9 +17,18 @@ Route::get('/', function () {
 
 Route::get('contact', 'PagesController@contact');
 
+Route::get('cms/settings', 'Cms\SettingsController@index');
+Route::resource('cms/settings/content', 'Cms\SettingsContentController');
+
+//Route::get('cms/settings/content', 'Cms\SettingsContentController@index');
+//Route::get('cms/settings/content/update/', 'Cms\SettingsContentController@update');
+
+Route::resource('cms/settings/general', 'Cms\SettingsGeneralController');
+
 
 Route::resource('cms/blog', 'Cms\BlogPostController');
 Route::resource('cms/user', 'Cms\UserController');
+Route::resource('cms/page', 'Cms\PageController');
 
 
 Route::controllers([
