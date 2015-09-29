@@ -9,8 +9,6 @@
             {{$page->page_id}}
             <a href="{{ URL::to("page/$page->page_id")}}/">{{$page->title}}</a>
             <a href="page/{{$page->page_id}}/edit">{{$page->title}}</a>
-
         </article>
     @endforeach
-
 @stop
