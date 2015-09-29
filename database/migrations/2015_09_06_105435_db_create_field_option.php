@@ -11,8 +11,8 @@ class DbCreateFieldOption extends Migration {
     public function up() {
         Schema::create('field_option', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->integer('field_option_type')->unsigned();
             $table->increments('field_option_id');
+            $table->integer('field_option_type')->unsigned();
             $table->string('name');
             $table->string('description')->nullable();
             $table->string('url_friendly')->nullable();
@@ -21,7 +21,7 @@ class DbCreateFieldOption extends Migration {
         });
 
         Schema::table('field_option', function ($table) {
-            $table->foreign('field_option_type')->references('field_option_type_id')->on('field_option_type');
+            $table->foreign('field_option_type')->references('field_option_type_id')->on('field_option_type')->onDelete('cascade');
         });
     }
 

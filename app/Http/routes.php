@@ -15,8 +15,7 @@ Route::get('/', function () {
     return "TODo";
 });
 
-Route::get('contact', 'PagesController@contact');
-
+ 
 Route::get('cms/settings', 'Cms\SettingsController@index');
 Route::resource('cms/settings/content', 'Cms\SettingsContentController');
 

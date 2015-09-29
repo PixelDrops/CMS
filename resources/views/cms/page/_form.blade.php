@@ -1,14 +1,14 @@
 <div class="form-group">
     {!!Form::label('language', 'Language: ') !!}
-    {!!Form::select('language', array('British' => 'British'),['class'=> 'form-control']) !!}
+    {!!Form::select('language', $languages,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
     {!!Form::label('status', 'Status: ') !!}
-    {!!Form::select('status', array('status' => 'Published'),['class'=> 'form-control']) !!}
+    {!!Form::select('status', $pageStatus,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
     {!!Form::label('visibility', 'Visibility: ') !!}
-    {!!Form::select('visibility', array('visible' => 'Visible'),['class'=> 'form-control']) !!}
+    {!!Form::select('visibility', $pageVisibility,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
     {!!Form::label('slug', 'Slug: ') !!}

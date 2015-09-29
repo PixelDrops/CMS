@@ -1,7 +1,7 @@
 dashboard
 
-<a href="blog">BLOG</a><br>
-<a href="page">Page</a><br>
-<a href="user">User</a><br>
+<a href="{{url('cms/blog/')}}">BLOG</a><br>
+<a href="cms/page/">Page</a><br>
+<a href="cms/user/">User</a><br>
 
-<a href="settings">Settings</a><br>
+<a href="cms/settings">Settings</a><br>

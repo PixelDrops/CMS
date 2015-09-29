@@ -16,4 +16,23 @@ class Page extends Model {
     protected $hidden = ['page_id'];
 
 
+    public function language() {
+        return $this->belongsTo('App\FieldOption');
+    }
+
+    public function author() {
+        return $this->belongsTo('App\User');
+    }
+
+    public function parentPage() {
+        return $this->belongsTo('App\Page');
+    }
+
+    public function status() {
+        return $this->belongsTo('App\FieldOption');
+    }
+
+    public function visibility() {
+        return $this->belongsTo('App\FieldOption');
+    }
 }
