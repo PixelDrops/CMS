@@ -1,6 +1,4 @@
-
-
-<form method="POST" action="/auth/login">
+<form method="POST" action="/cms/auth/login">
     {!! csrf_field() !!}
 
     <div>
@@ -20,4 +18,6 @@
     <div>
         <button type="submit">Login</button>
     </div>
+
+    <a href="/cms/password/email">Forgot Password</a>
 </form>

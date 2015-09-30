@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Cms\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
@@ -22,7 +22,10 @@ class AuthController extends Controller {
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
-    protected $redirectTo = 'dashboard';
+    protected $redirectTo = 'cms.dashboard';
+
+	// Login path is used in loginPath() to redirect if failed
+	protected $loginPath = 'cms/auth/login';
 
     /**
      * Create a new authentication controller instance
@@ -35,7 +38,11 @@ class AuthController extends Controller {
      * Get a validator for an incoming registration request.
      */
     protected function validator(array $data) {
-        return Validator::make($data, ['name' => 'required|max:255', 'email' => 'required|email|max:255|unique:user', 'password' => 'required|confirmed|min:6',]);
+        return Validator::make($data, [
+			'name' => 'required|max:255',
+			'email' => 'required|email|max:255|unique:user',
+			'password' => 'required|confirmed|min:6'
+		]);
     }
 
     /**
@@ -44,4 +51,9 @@ class AuthController extends Controller {
     protected function create(array $data) {
         return User::create(['name' => $data['name'], 'email' => $data['email'], 'password' => bcrypt($data['password']),]);
     }
+
+	public function getLogin() {
+		return view('cms.auth.login');
+	}
+
 }

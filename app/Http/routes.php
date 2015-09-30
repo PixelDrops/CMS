@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return "TODo";
+    return "TODo - <a href='cms''>CMS</a>";
 });
 
  
@@ -31,11 +31,19 @@ Route::resource('cms/page', 'Cms\PageController');
 
 
 Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
+    'cms/auth' => 'Cms\Auth\AuthController',
+	'cms/password' => 'Cms\Auth\PasswordController',
 ]);
 
-Route::get('cms','Cms\DashboardController@index');
+// Password reset link request routes...
+//Route::get('cms/auth/password/email', 'Cms\Auth\PasswordController@getEmail');
+//Route::post('cms/auth/password/email', 'Cms\Auth\PasswordController@postEmail');
+
+// Password reset routes...
+//Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+//Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+	Route::get('cms','Cms\DashboardController@index');
 Route::get('cms/dashboard','Cms\DashboardController@index');
 
 

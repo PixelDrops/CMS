@@ -1,14 +1,8 @@
-@extends('head')
+<!-- resources/views/auth/reset.blade.php -->
 
-@section('content')
-
-    <form method="POST" action="/auth/register">
+<form method="POST" action="/cms/password/reset">
     {!! csrf_field() !!}
-
-    <div>
-        Name
-        <input type="text" name="name" value="{{ old('name') }}">
-    </div>
+    <input type="hidden" name="token" value="{{ $token }}">
 
     <div>
         Email
@@ -26,8 +20,8 @@
     </div>
 
     <div>
-        <button type="submit">Register</button>
+        <button type="submit">
+            Reset Password
+        </button>
     </div>
 </form>
-
-@stop
