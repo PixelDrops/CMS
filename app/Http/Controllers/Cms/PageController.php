@@ -11,6 +11,7 @@ use App\Page;
 use Carbon\Carbon;
 
 class PageController extends Controller {
+
     public function __construct() {
         $this->middleware('auth');
     }
@@ -50,6 +51,6 @@ class PageController extends Controller {
 
         flash()->success("Your page has been created");
 
-        return redirect('cms\page');
+        return redirect('cms/page');
     }
 }

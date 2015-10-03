@@ -16,6 +16,12 @@ class Page extends Model {
     protected $hidden = ['page_id'];
 
 
+	public function scopeSlug($query) {
+		$query->where('published_at', '<=', Carbon::now());
+		$query->orderBy('published_at');
+		return $query->get();
+	}
+
     public function language() {
         return $this->belongsTo('App\FieldOption');
     }

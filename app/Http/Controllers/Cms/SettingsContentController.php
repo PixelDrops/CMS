@@ -18,9 +18,24 @@ class SettingsContentController extends Controller {
         return view("cms.settings.content.index", compact('settingsContent'));
     }
 
-    public function update(SettingsContent $blogPost, SettingsContentRequest $request) {
+	public function show(SettingsContent $settingsContent) {
+		return view("cms.settings.content", compact('settingsContent'));
+	}
 
-        $blogPost->update($request->all());
-        return redirect("cms/settings/content");
+	public function store(SettingsContent $request) {
+		$input = $request->all();
+		dd('here');
+		flash()->success("Your content has been created");
+
+		return redirect('/cms/settings/content');
+	}
+
+	public function edit(SettingsContent $settingsContent) {
+		return view('/cms/settings/content/edit', compact('settingsContent'));
+	}
+
+    public function update(SettingsContent $settingsContent, SettingsContentRequest $request) {
+		$settingsContent->update($request->all());
+        return redirect("/cms/settings/content");
     }
 }

@@ -29,6 +29,7 @@ class BlogPostController extends Controller {
     }
 
     public function store(BlogPostRequest $request) {
+
         $input = $request->all();
         $input['created_at'] = Carbon::now();
         $input['updated_at'] = Carbon::now();
@@ -36,24 +37,25 @@ class BlogPostController extends Controller {
         $BlogPost = new BlogPost();
         $BlogPost->title = $input['title'];
         $BlogPost->content = $input['content'];
-        $BlogPost->language = 1;
-        $BlogPost->status = 1;
-        $BlogPost->visibility = 1;
+        $BlogPost->language = 5;
+        $BlogPost->status = 5;
+        $BlogPost->visibility = 5;
         // $BlogPost->author=$this->findUser()->user_id;
         $BlogPost->published_at = Carbon::createFromFormat('Y-m-d H:i', $input['published_at'] . ' ' . $input['published_at_time']);
 
        \Auth::user()->blogPosts()->save($BlogPost);
        flash()->success("Your blog post has been created");
 
-        return redirect('cms\blog');
+        return redirect('/cms/blog');
     }
 
     public function edit(BlogPost $blogPost) {
-        return view('cms.blog.edit', compact('blogPost'));
+        return view('/cms/blog/edit', compact('blogPost'));
     }
 
     public function update(BlogPost $blogPost, BlogPostRequest $request) {
+
         $blogPost->update($request->all());
-        return redirect('cms\blog');
+        return redirect('/cms/blog');
     }
 }
