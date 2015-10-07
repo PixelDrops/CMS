@@ -7,6 +7,7 @@
         <li class="nav-item"><a class="nav-link" href="/cms/blog/">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="/cms/page/">Page</a></li>
         <li class="nav-item"><a class="nav-link" href="/cms/user/">User</a></li>
+        <li class="nav-item"><a class="nav-link" href="/cms/layout/">Layout</a></li>
         <li class="nav-item"><a class="nav-link" href="/cms/settings/">Settings</a></li>
         <li class="nav-item"><a class="nav-link" href="/cms/auth/logout">Logout</a></li>
 

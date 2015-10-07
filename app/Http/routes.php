@@ -23,13 +23,13 @@
 	//Route::get('cms/settings/content', 'Cms\SettingsContentController@index');
 	//Route::get('cms/settings/content/update/', 'Cms\SettingsContentController@update');
 
-	Route::resource('cms/settings/content', 'Cms\SettingsContentController');
 	Route::resource('cms/settings/general', 'Cms\SettingsGeneralController');
 
-
+	Route::resource('cms/layout', 'Cms\LayoutController');
+	Route::resource('cms/page', 'Cms\PageController');
 	Route::resource('cms/blog', 'Cms\BlogPostController');
 	Route::resource('cms/user', 'Cms\UserController');
-	Route::resource('cms/page', 'Cms\PageController');
+
 
 
 	Route::controllers([
@@ -70,3 +70,26 @@
 	//Route::get('category/{category}',  ['as' => 'category', 'uses' => 'CategoryController@index']);
 	//Route::post('language/change', ['as' => 'app.language.change' , 'uses' => 'LanguageController@postChange']);
 	//});
+
+
+	// Need to figure out how to register this component
+	Form::macro('editor', function($name, $value = null, $options = array()) {
+
+		// We will get the appropriate value for the given field. We will look for the
+		// value in the session for the value in the old input data then we'll look
+		// in the model instance if one is set. Otherwise we will just use empty.
+		$id = 'editor';
+
+		// Once we have the type, value, and ID we can merge them into the rest of the
+		// attributes array so we can convert them into their HTML attribute format
+		// when creating the HTML element. Then, we will return the entire input.
+		//$merge = compact('value','id');
+		$merge = compact('id');
+
+		$options = array_merge($options, $merge);
+
+		return '<div'.$this->html->attributes($options).'>'.$value.'</div>';
+
+
+		//return '<div id="editor">'.$content.'</div>';
+	});

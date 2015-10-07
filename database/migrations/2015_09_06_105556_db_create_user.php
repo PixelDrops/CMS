@@ -20,7 +20,7 @@ class DbCreateUser extends Migration
             $table->string('lastname')->nullable();
             $table->string('display_name')->nullable();
             $table->string('personal_photo')->nullable();
-            $table->string('email')->unique();
+            $table->string('email')->unique('email_unique');;
             $table->string('password', 60);
             $table->boolean('active')->default(true);
             $table->dateTime('last_logged_in');

@@ -13,10 +13,11 @@ class DbCreateSettingsGeneral extends Migration
         Schema::create('settings_general', function (Blueprint $table) {
             $table->increments('settings_general_id');
             $table->text('page_title');
-            $table->text('page_url');
+            $table->text('homepage');
             $table->text('meta_description');
             $table->text('meta_keywords');
             $table->text('site_open');
+			$table->text('author');
             $table->text('unavailable_message');
         });
     }

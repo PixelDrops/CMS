@@ -21,7 +21,7 @@ class BlogPostController extends Controller {
     }
 
     public function show(BlogPost $blogPost) {
-        return view("cms.blog.show", compact('blogPost'));
+		return view("cms.blog.show", compact('blogPost'));
     }
 
     public function create() {
@@ -29,7 +29,6 @@ class BlogPostController extends Controller {
     }
 
     public function store(BlogPostRequest $request) {
-
         $input = $request->all();
         $input['created_at'] = Carbon::now();
         $input['updated_at'] = Carbon::now();
@@ -50,11 +49,10 @@ class BlogPostController extends Controller {
     }
 
     public function edit(BlogPost $blogPost) {
-        return view('/cms/blog/edit', compact('blogPost'));
+		return view('/cms/blog/edit', compact('blogPost'));
     }
 
     public function update(BlogPost $blogPost, BlogPostRequest $request) {
-
         $blogPost->update($request->all());
         return redirect('/cms/blog');
     }
