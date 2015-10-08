@@ -19,7 +19,7 @@ class PasswordController extends Controller {
 
     use ResetsPasswords;
 
-	protected $redirectTo = 'cms.dashboard';
+	protected $redirectTo = 'cms/dashboard';
 
 
     public function __construct() {
@@ -27,7 +27,7 @@ class PasswordController extends Controller {
     }
 
 	public function getEmail() {
-		return view('cms.auth.password');
+		return view('cms.email.password');
 	}
 
 

@@ -50,7 +50,7 @@ class LayoutController extends Controller {
 	}
 
     public function update( $layoutId, LayoutRequest $request) {
-		dd($request->all());
+		//dd($request->all());
 		$layout = Layout::findOrNew($layoutId);
 		$layout->update($request->all());
         return redirect("/cms/layout/");
