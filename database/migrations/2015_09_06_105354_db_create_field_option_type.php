@@ -18,6 +18,15 @@ class DbCreateFieldOptionType extends Migration {
         Schema::table('field_option_type', function ($table) {
             $table->primary('field_option_type_id');
         });
+
+
+		DB::table('field_option_type')->insert(
+			array(
+				['field_option_type_id'=> 1,'name' => 'Language'],
+				['field_option_type_id'=> 2,'name' => 'Page Status'],
+				['field_option_type_id'=> 3,'name' => 'Visibility'],
+			)
+		);
     }
 
     /**

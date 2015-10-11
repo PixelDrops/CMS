@@ -51,6 +51,21 @@ class PageController extends Controller {
 
         flash()->success("Your page has been created");
 
-        return redirect('cms/page');
+        return redirect('cms/page/');
     }
+
+	public function edit($pageId) {
+		$Page = Page::findOrNew($pageId);
+		$languages = FieldOption::type(FieldOptionTypeEnum::LANGUAGE);
+		$pageStatus = FieldOption::type(FieldOptionTypeEnum::PAGE_STATUS);
+		$pageVisibility = FieldOption::type(FieldOptionTypeEnum::PAGE_VISIBILITY);
+
+		return view('/cms/page/edit', compact('Page','languages', 'pageStatus', 'pageVisibility'));
+	}
+
+	public function update($pageId, PageRequest $request) {
+		$page = Page::findOrNew($pageId);
+		$page->update($request->all());
+		return redirect("/cms/page/");
+	}
 }

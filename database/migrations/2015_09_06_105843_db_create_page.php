@@ -16,6 +16,7 @@ class DbCreatePage extends Migration {
             $table->integer('author')->unsigned()->nullable();
             $table->integer('status')->unsigned();
             $table->integer('visibility')->unsigned();
+			$table->integer('layout')->unsigned();
             $table->string('slug');
             $table->string('title');
             $table->longText('content');
@@ -31,6 +32,7 @@ class DbCreatePage extends Migration {
             $table->foreign('author')->references('user_id')->on('user')->onDelete("set null");
             $table->foreign('status')->references('field_option_id')->on('field_option')->onDelete("restrict");
             $table->foreign('visibility')->references('field_option_id')->on('field_option')->onDelete("restrict");
+			$table->foreign('layout')->references('layout_id')->on('layout')->onDelete("restrict");
         });
     }
 

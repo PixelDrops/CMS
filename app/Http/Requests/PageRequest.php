@@ -16,7 +16,7 @@ class PageRequest extends Request {
             'status' => 'required',
             'visibility' => 'required',
             //'slug' => 'required',
-            'title' => 'required|min:10',
+            'title' => 'required|min:4',
             'content' => 'required|min:10'
         ];
     }

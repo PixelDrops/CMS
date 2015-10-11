@@ -1,36 +1,36 @@
 <?php
 
-namespace App;
+	namespace App;
 
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
+	use Carbon\Carbon;
+	use Illuminate\Database\Eloquent\Model;
 
-class BlogPost extends Model {
+	class BlogPost extends Model {
 
-    protected $table = 'blog_post';
+		protected $table = 'blog_post';
 
-    protected $primaryKey = 'blog_post_id';
+		protected $primaryKey = 'blog_post_id';
 
-    protected $fillable = ['language', 'parent_post', 'author', 'status', 'visibility', 'slug', 'title', 'sub_title',
-        'content', 'published_at'];
+		protected $fillable = ['language', 'parent_post', 'author', 'status', 'visibility', 'slug', 'title', 'sub_title', 'content', 'published_at'];
 
-    protected $hidden = ['blog_post_id'];
+		protected $hidden = ['blog_post_id'];
 
-    protected $dates = ['published_at'];
+		protected $dates = ['published_at'];
 
 
-    public function scopePublished($query) {
-        $query->where('published_at', '<=', Carbon::now());
-        $query->orderBy('published_at');
-        return $query->get();
-    }
+		public function scopePublished($query) {
+			$query->where('published_at', '<=', Carbon::now());
+			$query->orderBy('published_at');
 
-    public function setPublishedAtAttribute($date) {
-        $this->attributes['published_at'] = Carbon::parse($date);
-    }
+			return $query->get();
+		}
 
-    public function postAuthor() {
-        return $this->belongsTo('App\User','author','user_id');
-    }
+		public function setPublishedAtAttribute($date) {
+			$this->attributes['published_at'] = Carbon::parse($date);
+		}
 
-}
+		public function postAuthor() {
+			return $this->belongsTo('App\User', 'author', 'user_id');
+		}
+
+	}
