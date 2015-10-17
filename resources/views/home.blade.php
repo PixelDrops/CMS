@@ -1,2 +1,2 @@
-test
-{{$page->title}}
+
+{!!$layoutContent!!}

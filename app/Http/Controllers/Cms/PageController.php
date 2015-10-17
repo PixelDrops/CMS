@@ -7,6 +7,7 @@ use App\FieldOption;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\PageRequest;
+use App\Layout;
 use App\Page;
 use Carbon\Carbon;
 
@@ -23,12 +24,12 @@ class PageController extends Controller {
     }
 
     public function create() {
-
         $languages = FieldOption::type(FieldOptionTypeEnum::LANGUAGE);
         $pageStatus = FieldOption::type(FieldOptionTypeEnum::PAGE_STATUS);
         $pageVisibility = FieldOption::type(FieldOptionTypeEnum::PAGE_VISIBILITY);
+		$layout = Layout::lists('name','layout_id');
 
-        return view("cms.page.create", compact('languages', 'pageStatus', 'pageVisibility'));
+        return view("cms.page.create", compact('languages', 'pageStatus', 'pageVisibility','layout'));
     }
 
     public function store(PageRequest $request) {
@@ -41,11 +42,13 @@ class PageController extends Controller {
         $Page->language = $input['language'];
         $Page->status = $input['status'];
         $Page->visibility = $input['visibility'];
+		$Page->layout = $input['layout'];
         $Page->slug = $input['slug'];
         $Page->title = $input['title'];
         $Page->content = $input['content'];
         $Page->description = $input['description'];
         $Page->keyword = $input['keyword'];
+		$Page->javascript = $input['javascript'];
 
         $Page->save();
 
@@ -59,8 +62,9 @@ class PageController extends Controller {
 		$languages = FieldOption::type(FieldOptionTypeEnum::LANGUAGE);
 		$pageStatus = FieldOption::type(FieldOptionTypeEnum::PAGE_STATUS);
 		$pageVisibility = FieldOption::type(FieldOptionTypeEnum::PAGE_VISIBILITY);
+		$layout = Layout::lists('name','layout_id');
 
-		return view('/cms/page/edit', compact('Page','languages', 'pageStatus', 'pageVisibility'));
+		return view('/cms/page/edit', compact('Page','languages', 'pageStatus', 'pageVisibility','layout'));
 	}
 
 	public function update($pageId, PageRequest $request) {

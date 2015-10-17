@@ -11,6 +11,10 @@
     {!!Form::select('visibility', $pageVisibility,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
+    {!!Form::label('layout', 'Layout: ') !!}
+    {!!Form::select('layout', $layout,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
     {!!Form::label('slug', 'Slug: ') !!}
     {!!Form::text('slug', null,['class'=> 'form-control']) !!}
 </div>
@@ -29,6 +33,10 @@
 <div class="form-group">
     {!!Form::label('keyword', 'keyword: ') !!}
     {!!Form::textarea('keyword', null,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!!Form::label('javascript', 'Page Specific Javascript: ') !!}
+    {!!Form::textarea('javascript', null,['class'=> 'form-control']) !!}
 </div>
 
 <div class="form-group">

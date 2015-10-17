@@ -22,6 +22,7 @@ class DbCreatePage extends Migration {
             $table->longText('content');
             $table->mediumText('description');
             $table->mediumText('keyword');
+			$table->mediumText('javascript');
             $table->dateTime('published_at');
             $table->timestamps();
         });

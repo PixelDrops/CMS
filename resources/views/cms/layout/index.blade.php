@@ -24,7 +24,7 @@
                 <td>{{$Layout->layout_id}}</td>
                 <td>{{$Layout->name}}</td>
                 <td>{{$Layout->description}}</td>
-                <td><a href="{{$Layout->layout_id}}/edit">Edit</a></td>
+                <td><a href="/cms/layout/{{$Layout->layout_id}}/edit">Edit</a></td>
             </tr>
         @endforeach
         </tbody>
