@@ -23,6 +23,7 @@ class AuthController extends Controller {
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     protected $redirectTo = 'cms.dashboard';
+	protected $redirectAfterLogout='cms/dashboard';
 
 	// Login path is used in loginPath() to redirect if failed
 	protected $loginPath = 'cms/auth/login';

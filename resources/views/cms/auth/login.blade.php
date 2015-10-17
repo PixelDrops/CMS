@@ -48,7 +48,7 @@
                 <button type="submit">Login</button>
             </div>
 
-            <a href="/cms/password/email">Forgot Password</a>
+            <a href="/cms/auth/password/email">Forgot Password</a>
         </form>
     </div>
 </div>

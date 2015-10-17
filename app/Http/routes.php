@@ -31,20 +31,20 @@
 	Route::resource('cms/user', 'Cms\UserController');
 
 
-
-	Route::controllers([
-		'cms/auth' => 'Cms\Auth\AuthController',
-		'cms/password' => 'Cms\Auth\PasswordController'
-	]);
-
 	// Password reset link request routes...
-	//Route::get('cms/auth/password/email', 'Cms\Auth\PasswordController@getEmail');
-	//Route::post('cms/auth/password/email', 'Cms\Auth\PasswordController@postEmail');
+	Route::get('cms/auth/password/email', 'Cms\Auth\PasswordController@getEmail');
+	Route::post('cms/auth/password/email', 'Cms\Auth\PasswordController@postEmail');
 
 	// Password reset routes...
-	//Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
-	//Route::post('password/reset', 'Auth\PasswordController@postReset');
+	Route::get('cms/auth/password/reset/{token}', 'Cms\Auth\PasswordController@getReset');
+	Route::post('cms/auth/password/reset', 'Cms\Auth\PasswordController@postReset');
 
+	// Password reset routes...
+	Route::get('cms/auth/login', 'Cms\Auth\AuthController@getLogin');
+	Route::post('cms/auth/login', 'Cms\Auth\AuthController@postLogin');
+	Route::get('cms/auth/logout', 'Cms\Auth\AuthController@getLogout');
+
+	// Dashboard Routes
 	Route::get('cms', 'Cms\DashboardController@index');
 	Route::get('cms/dashboard', 'Cms\DashboardController@index');
 
