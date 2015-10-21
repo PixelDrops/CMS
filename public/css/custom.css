@@ -2,7 +2,7 @@
 * Globals
 */
 body {
-    font-family: "Terminal Dosis","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Amatic SC', "Terminal Dosis","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /* Links */
 a,
@@ -14,9 +14,15 @@ a:hover {
 /*
 * Header
 */
+.logo-image {
+    max-height: 400px;
+}
+
+
 .masthead {
     display: table;
     width: 100%;
+    text-align: center;
 }
 .masthead-brand {
     margin-top: 10px;
@@ -29,7 +35,7 @@ a:hover {
 }
 
 .nav{
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 30px;
 }
 .masthead-nav > li {
@@ -60,9 +66,9 @@ a:hover {
 
 .video-center {
     max-width: 700px; /* you have to have a size or this method doesn't work */
-   top: 0; right: 0; /* confuse it i guess */
-   bottom: 0; left: 0;
-   margin: auto; /* make em equal */
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
 }
 
 .video-block{
@@ -88,8 +94,8 @@ a:hover {
 }
 
 #map {
-       height: 600px;
-     }
+    height: 600px;
+}
 
 
 /**************************
@@ -369,25 +375,20 @@ figure.effect-portfolio:hover img {
 }
 
 
-@media (min-width: 992px) {
-    .masthead-brand {
-        float: left;
-    }
-    .masthead-nav {
-        float: right;
-    }
-}
-
 @media (max-width: 992px) {
-    .masthead {
-        text-align: center;
+    .logo-image {
+        max-height: 300px;
     }
 }
 
-@media (min-width: 992px) {
-    .masthead,
-    .mastfoot,
-    .cover-container {
-        width: 700px;
+@media (max-width: 730px) {
+    .logo-image {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 530px) {
+    .logo-image {
+        max-height: 100px;
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+	// https://github.com/Studio-42/elFinder - File Manager
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application Routes
