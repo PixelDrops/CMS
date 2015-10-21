@@ -3,7 +3,7 @@
 @section('content')
 
     PAGES
-    <br> <a href="create">Create new page</a><br><br>
+    <br> <a href="/cms/page/create">Create new page</a><br><br>
     <table style="width:100%;max-width: 100%;" data-sort="table">
         <thead >
             <tr>
@@ -20,6 +20,7 @@
                     <td>{{$page->title}}</td>
                     <td>{{$page->slug}}</td>
                     <td><a href="/cms/page/{{$page->page_id}}/edit">Edit</a></td>
+                    <td><a target="_blank" href="/{{$page->slug}}">View</a></td>
                 </tr>
             @endforeach
         </tbody>

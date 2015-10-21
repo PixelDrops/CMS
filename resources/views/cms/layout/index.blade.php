@@ -5,7 +5,7 @@
 
 
     <h2>Layout</h2>
-    <a href="create">Create new Layout</a>
+    <a href="/cms/layout/create">Create new Layout</a>
     <br><br>
 
     </div>
