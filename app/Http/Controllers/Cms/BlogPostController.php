@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\BlogPost;
 use App\Http\Requests;
 use App\Http\Requests\BlogPostRequest;
+use App\Layout;
 use Carbon\Carbon;
 
 class BlogPostController extends Controller {
@@ -20,12 +21,10 @@ class BlogPostController extends Controller {
         return view("cms.blog.index", compact('BlogPosts'));
     }
 
-    public function show(BlogPost $blogPost) {
-		return view("cms.blog.show", compact('blogPost'));
-    }
-
     public function create() {
-        return view("cms.blog.create");
+		$layout = Layout::lists('name','layout_id');
+
+        return view("cms.blog.create",compact('layout'));
     }
 
     public function store(BlogPostRequest $request) {
@@ -34,7 +33,11 @@ class BlogPostController extends Controller {
         $input['updated_at'] = Carbon::now();
 
         $BlogPost = new BlogPost();
-        $BlogPost->title = $input['title'];
+		$BlogPost->layout = $input['layout'];
+
+
+		$BlogPost->slug = $input['slug'];
+		$BlogPost->title = $input['title'];
         $BlogPost->content = $input['content'];
         $BlogPost->language = 5;
         $BlogPost->status = 5;
@@ -49,7 +52,9 @@ class BlogPostController extends Controller {
     }
 
     public function edit(BlogPost $blogPost) {
-		return view('/cms/blog/edit', compact('blogPost'));
+		$layout = Layout::lists('name','layout_id');
+
+		return view('/cms/blog/edit', compact('blogPost','layout'));
     }
 
     public function update(BlogPost $blogPost, BlogPostRequest $request) {

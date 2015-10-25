@@ -3,6 +3,14 @@
     {!!Form::text('title', null,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
+    {!!Form::label('slug', 'Slug: ') !!}
+    {!!Form::text('slug', null,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
+    {!!Form::label('layout', 'Layout: ') !!}
+    {!!Form::select('layout', $layout,['class'=> 'form-control']) !!}
+</div>
+<div class="form-group">
     {!!Form::label('content', 'Body: ') !!}
     {!!Form::textarea('content', null,['class'=> 'form-control']) !!}
 </div>

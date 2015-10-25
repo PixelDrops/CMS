@@ -8,8 +8,9 @@
     @foreach( $BlogPosts as $BlogPost)
         <article>
             {{$BlogPost->blog_post_id}}
-            <a href="/blog/{{$BlogPost->blog_post_id}}/">{{$BlogPost->title}}</a>
+            {{$BlogPost->title}}
             <a href="/cms/blog/{{$BlogPost->blog_post_id}}/edit">Edit</a>
+            <a href="/blog/{{$BlogPost->slug}}">View</a>
         </article>
     @endforeach
 @stop

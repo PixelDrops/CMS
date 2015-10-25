@@ -18,7 +18,8 @@ class DbCreateBlogPost extends Migration
             $table->integer('author')->unsigned()->nullable();
             $table->integer('status')->unsigned();
             $table->integer('visibility')->unsigned();
-            $table->string('slug');
+			$table->integer('layout')->unsigned();
+			$table->string('slug');
             $table->string('title');
             $table->string('sub_title')->nullable();
             $table->longText('content');
@@ -33,7 +34,8 @@ class DbCreateBlogPost extends Migration
             $table->foreign('author')->references('user_id')->on('user')->onDelete("set null");
             $table->foreign('status')->references('field_option_id')->on('field_option')->onDelete("restrict");
             $table->foreign('visibility')->references('field_option_id')->on('field_option')->onDelete("restrict");
-        });
+			$table->foreign('layout')->references('layout_id')->on('layout')->onDelete("restrict");
+		});
     }
 
     /**

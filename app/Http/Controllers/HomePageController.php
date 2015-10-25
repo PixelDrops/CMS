@@ -5,7 +5,6 @@
 	use App\Http\Requests;
 	use App\Layout;
 	use App\Page;
-	use Illuminate\Support\Facades\DB;
 
 	class HomePageController extends Controller {
 
@@ -22,18 +21,29 @@
 		}
 
 		public function page($url) {
-			$page = $this->getPage($url);
-			$layout = $this->getPageLayout($page);
-
-			$layoutContent = $this->replaceLayoutTitle($layout,$page);
-			$layoutContent = $this->replaceActiveContentPage($layoutContent,$page);
-			$layoutContent = $this->replaceLayoutPageContent($layoutContent, $page);
-			$layoutContent = $this->replacePageJavascriptContent($layoutContent, $page);
+			$layoutContent = $this->createPageLayout($url);
 
 			return view('home', compact('layoutContent','page'));
 		}
 
-		private function getPage($url) {
+		public function blog($slug) {
+			$layoutContent = $this->createPageLayout('blog');
+			$layoutContent = BlogPostPageController::createPageLayout($layoutContent, $slug);
+			return view('post', compact('layoutContent'));
+		}
+
+		private function createPageLayout($url) {
+			$page = $this->retrievePage($url);
+			$layout = $this->retrievePageLayout($page);
+
+			$layoutContent = $this->replaceLayoutTitle($layout,$page,$url);
+			$layoutContent = $this->replaceActiveContentPage($layoutContent,$page);
+			$layoutContent = $this->replaceLayoutPageContent($layoutContent, $page);
+			$layoutContent = $this->replacePageJavascriptContent($layoutContent, $page);
+			return $layoutContent;
+		}
+
+		private function retrievePage($url) {
 			$where = Page::where('slug', $url);
 			if (! $where->exists()) {
 				throw new NotFoundHttpException;
@@ -43,18 +53,19 @@
 			return $page;
 		}
 
-		private function getPageLayout($page) {
+		private function retrievePageLayout($page) {
 			$layoutId = $page->layout;
 
 			$layout = Layout::where('layout_id',$layoutId)->first();
 			return $layout;
 		}
 
-		private function replaceLayoutTitle($layout, $page) {
+		private function replaceLayoutTitle($layout, $page,$url) {
 			$title = $page->title;
 			$content = $layout->content;
 
-			if (strpos($content,HomePageController::MY_TITLE) !== false)
+			// Do replace the title for the blog. Let it to be replaces by the blog title
+			if (strpos($content,HomePageController::MY_TITLE) !== false && $url != 'blog')
 				return str_replace(HomePageController::MY_TITLE, $title, $content);
 			return $content;
 		}

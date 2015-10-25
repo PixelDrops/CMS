@@ -63,12 +63,16 @@
 	//Route::get('cms/auth/register', 'Cms\Auth\AuthController@getRegister');
 	//Route::post('cms/auth/register', 'Cms\Auth\AuthController@postRegister');
 
+	// Route::get('/blog/{slug}',['as' => 'blogPost', 'uses' => 'BlogPostPageController@show'])->where('slug', '[A-Za-z0-9-_]+');
+
+
 	// Application routes
 	//Route::group( function()
 	//{
 	Route::get('/', ['as' => 'root', 'uses' => 'HomePageController@index']);
 	//Route::get('article/{article}',  ['as' => 'article', 'uses' => 'ArticleController@index']);
 	Route::get('/{page}',  ['as' => 'page', 'uses' => 'HomePageController@page']);
+	Route::get('/blog/{slug}',  ['as' => 'blogPost', 'uses' => 'HomePageController@blog']);
 	//Route::get('category/{category}',  ['as' => 'category', 'uses' => 'CategoryController@index']);
 	//Route::post('language/change', ['as' => 'app.language.change' , 'uses' => 'LanguageController@postChange']);
 	//});

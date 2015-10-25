@@ -8,12 +8,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <!-- Latest compiled and minified CSS -->
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+         <link rel="stylesheet" href="{{ asset('/css/cms/bootstrap.min.css') }}">
 
 
-        <script src="//code.jquery.com/jquery.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="{{ asset('/js/cms/jquery.js') }}"></script>
+        <script src="{{ asset('/js/cms/bootstrap.min.js') }}"></script>
 
         <style>
             body {

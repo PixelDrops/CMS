@@ -29,8 +29,8 @@
 			$this->attributes['published_at'] = Carbon::parse($date);
 		}
 
-		public function postAuthor() {
-			return $this->belongsTo('App\User', 'author', 'user_id');
+		public function author() {
+			return $this->belongsTo('App\User','user_id');
 		}
 
 	}
