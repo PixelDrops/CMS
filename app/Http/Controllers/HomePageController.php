@@ -15,7 +15,6 @@
 		const ACTIVE_PAGE = '{{%S[%SLUG_REPLACE%]%}}';
 		const REGEX_ACTIVE_PAGE = '/{\{%S\[(\w+)\]%\}\}/';
 
-
 		public function index() {
 			return $this->page('index');
 		}
@@ -30,6 +29,13 @@
 			$layoutContent = $this->createPageLayout('blog');
 			$layoutContent = BlogPostPageController::createPageLayout($layoutContent, $slug);
 			return view('post', compact('layoutContent'));
+		}
+
+		public function blogListing() {
+			$layoutContent = $this->createPageLayout('blog-post-listing');
+			$layoutContent = BlogPostListingPageController::createBlogListingPage($layoutContent);
+			return view('post_listing', compact('layoutContent'));
+
 		}
 
 		private function createPageLayout($url) {
@@ -65,7 +71,7 @@
 			$content = $layout->content;
 
 			// Do replace the title for the blog. Let it to be replaces by the blog title
-			if (strpos($content,HomePageController::MY_TITLE) !== false && $url != 'blog')
+			if (strpos($content,HomePageController::MY_TITLE) !== false && $url != 'blog' && $url != 'blog-post-listing')
 				return str_replace(HomePageController::MY_TITLE, $title, $content);
 			return $content;
 		}

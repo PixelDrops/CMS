@@ -71,8 +71,11 @@
 	//{
 	Route::get('/', ['as' => 'root', 'uses' => 'HomePageController@index']);
 	//Route::get('article/{article}',  ['as' => 'article', 'uses' => 'ArticleController@index']);
-	Route::get('/{page}',  ['as' => 'page', 'uses' => 'HomePageController@page']);
 	Route::get('/blog/{slug}',  ['as' => 'blogPost', 'uses' => 'HomePageController@blog']);
+	Route::get('/blog/',  ['as' => 'blogPostListing', 'uses' => 'HomePageController@blogListing']);
+
+	Route::get('/{page}',  ['as' => 'page', 'uses' => 'HomePageController@page']);
+
 	//Route::get('category/{category}',  ['as' => 'category', 'uses' => 'CategoryController@index']);
 	//Route::post('language/change', ['as' => 'app.language.change' , 'uses' => 'LanguageController@postChange']);
 	//});
