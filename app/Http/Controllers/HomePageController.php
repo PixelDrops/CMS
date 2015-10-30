@@ -5,6 +5,7 @@
 	use App\Http\Requests;
 	use App\Layout;
 	use App\Page;
+	use Illuminate\Support\Facades\View;
 
 	class HomePageController extends Controller {
 
@@ -15,45 +16,47 @@
 		const ACTIVE_PAGE = '{{%S[%SLUG_REPLACE%]%}}';
 		const REGEX_ACTIVE_PAGE = '/{\{%S\[(\w+)\]%\}\}/';
 
+		private $pageLayoutContent;
+
 		public function index() {
 			return $this->page('index');
 		}
 
 		public function page($url) {
-			$layoutContent = $this->createPageLayout($url);
-
-			return view('home', compact('layoutContent','page'));
+			$this->createPageLayout($url);
+			return View::make('home')->with([
+				'pageLayoutContent'=>$this->pageLayoutContent
+			]);
 		}
 
 		public function blog($slug) {
 			$layoutContent = $this->createPageLayout('blog');
+
 			$layoutContent = BlogPostPageController::createPageLayout($layoutContent, $slug);
 			return view('post', compact('layoutContent'));
 		}
 
-		public function blogListing() {
-			$layoutContent = $this->createPageLayout('blog-post-listing');
-			$layoutContent = BlogPostListingPageController::createBlogListingPage($layoutContent);
-			return view('post_listing', compact('layoutContent'));
-
-		}
+		//public function blogListing() {
+		//	$layoutContent = $this->createPageLayout('blog-post-listing');
+		//	$layoutContent = BlogPostListingPageController::createBlogListingPage($layoutContent);
+	    //		return view('post_listing', compact('layoutContent'));
+		//}
 
 		private function createPageLayout($url) {
 			$page = $this->retrievePage($url);
 			$layout = $this->retrievePageLayout($page);
 
-			$layoutContent = $this->replaceLayoutTitle($layout,$page,$url);
-			$layoutContent = $this->replaceActiveContentPage($layoutContent,$page);
-			$layoutContent = $this->replaceLayoutPageContent($layoutContent, $page);
-			$layoutContent = $this->replacePageJavascriptContent($layoutContent, $page);
-			return $layoutContent;
+			$this->replaceLayoutTitle($layout,$page,$url);
+			$this->replaceActiveContentPage($page);
+			$this->replaceLayoutPageContent($page);
+			$this->replacePageJavascriptContent($page);
+			$this->createBlogListing();
 		}
 
 		private function retrievePage($url) {
 			$where = Page::where('slug', $url);
-			if (! $where->exists()) {
+			if (! $where->exists())
 				throw new NotFoundHttpException;
-			}
 
 			$page = $where->first();
 			return $page;
@@ -68,33 +71,35 @@
 
 		private function replaceLayoutTitle($layout, $page,$url) {
 			$title = $page->title;
-			$content = $layout->content;
-
+			$this->pageLayoutContent = $layout->content;
 			// Do replace the title for the blog. Let it to be replaces by the blog title
-			if (strpos($content,HomePageController::MY_TITLE) !== false && $url != 'blog' && $url != 'blog-post-listing')
-				return str_replace(HomePageController::MY_TITLE, $title, $content);
-			return $content;
+			if (strpos($this->pageLayoutContent, HomePageController::MY_TITLE) !== FALSE && $url != 'blog' && $url != 'blog-post-listing')
+				$this->pageLayoutContent = str_replace(HomePageController::MY_TITLE, $title, $this->pageLayoutContent);
 		}
 
-		private function replaceActiveContentPage($layoutContent,$page) {
+		private function replaceActiveContentPage($page) {
 			$slug = $page->slug;
 			$activePage = str_replace(HomePageController::SLUG_REPLACE, $slug, HomePageController::ACTIVE_PAGE);
-			$layoutContent = str_replace($activePage, 'class="active"', $layoutContent);
-			return preg_replace(HomePageController::REGEX_ACTIVE_PAGE, ' ', $layoutContent);
+			$this->pageLayoutContent = str_replace($activePage, ' class="active"', $this->pageLayoutContent);
+			$this->pageLayoutContent = preg_replace(HomePageController::REGEX_ACTIVE_PAGE, '', $this->pageLayoutContent);
 		}
 
-		private function replaceLayoutPageContent($layoutContent, $page) {
+		private function replaceLayoutPageContent($page) {
 			$pageContent = $page->content;
 
-			if (strpos($layoutContent,HomePageController::PAGE_CONTENT) !== false)
-				return str_replace(HomePageController::PAGE_CONTENT, $pageContent, $layoutContent);
-			return $layoutContent;
+			if (strpos($this->pageLayoutContent,HomePageController::PAGE_CONTENT) !== false)
+				$this->pageLayoutContent = str_replace(HomePageController::PAGE_CONTENT, $pageContent, $this->pageLayoutContent);
 		}
 
-		private function replacePageJavascriptContent($layoutContent, $page) {
+		private function replacePageJavascriptContent($page) {
 			$javascriptContent = $page->javascript;
-			if (strpos($layoutContent,HomePageController::PAGE_SPECIFIC_JAVASCRIPT) !== false)
-				return str_replace(HomePageController::PAGE_SPECIFIC_JAVASCRIPT, $javascriptContent, $layoutContent);
-			return $layoutContent;
+			if (strpos($this->pageLayoutContent,HomePageController::PAGE_SPECIFIC_JAVASCRIPT) !== false)
+				$this->pageLayoutContent = str_replace(HomePageController::PAGE_SPECIFIC_JAVASCRIPT, $javascriptContent, $this->pageLayoutContent);
+		}
+
+		private function createBlogListing() {
+			$Controller = new BlogPostListingPageController($this->pageLayoutContent);
+			$this->pageLayoutContent = $Controller->createBlogListingPage();
+
 		}
 	}
