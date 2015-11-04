@@ -30,14 +30,10 @@
 			$this->createBlogPost();
 			$this->pageLayoutContent = preg_replace(BlogPostListingPageController::BLOG_LISTING, $this->blogLayoutContent, $this->pageLayoutContent);
 
-			//$layoutContent = self::replaceLayoutTitle($layoutContent);
-			//$layoutContent = self::replaceLayoutBlogTitle($layoutContent,$blogPost);
-
 			return $this->pageLayoutContent;
 		}
 
 		private function retrieveBlogPostsWithPagination() {
-			// TODO Need to figure out how to update this from the CMS
 			$this->BlogPosts = BlogPost::paginate($this->findBlogSize());
 		}
 
@@ -54,13 +50,21 @@
 		}
 
 		private function createBlogPost() {
-			var_dump(sizeof($this->BlogPosts));
-			$this->blogLayoutContent = '<div class="blog-post">';
+			// TODO Createa an editable file for adding the blog post listing inorder to be easily updated
+			$this->blogLayoutContent = '<div class="blog-post-listing">';
 			foreach ($this->BlogPosts as $BlogPost) {
-				$this->blogLayoutContent .= '<div class="blog-title">'.$BlogPost->title.'</div>';
-				$this->blogLayoutContent .= '<div class="blog-content">'.$BlogPost->content.'</div>';
+				$this->blogLayoutContent .= '<div class="blog-post">';
+				$this->blogLayoutContent .= '<div class="blog-title"><a href="blog/'.$BlogPost->slug.'">'.$BlogPost->title.'</a></div>';
+				$this->blogLayoutContent .= '<div class="blog-content">'.$this->removeContentAfterPostPageBreak($BlogPost->content).'</div>';
+				$this->blogLayoutContent .= '</div>';
 			}
 			$this->blogLayoutContent .= '</div>';
-			// $this->blogLayoutContent .= '{!! $this->BlogPosts->render() !!}';
+		}
+
+		private function removeContentAfterPostPageBreak($content) {
+			if (strpos($content,BlogPostListingPageController::BLOG_POST_BREAK) !== false)
+				return substr($content,0, strpos($content, BlogPostListingPageController::BLOG_POST_BREAK));
+
+			return $content;
 		}
 	}

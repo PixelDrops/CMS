@@ -30,20 +30,19 @@
 		}
 
 		public function blog($slug) {
-			$layoutContent = $this->createPageLayout('blog');
+			$this->createPageLayout('blog');
 
-			$layoutContent = BlogPostPageController::createPageLayout($layoutContent, $slug);
-			return view('post', compact('layoutContent'));
+			$this->pageLayoutContent = BlogPostPageController::createPageLayout($this->pageLayoutContent, $slug);
+
+			return View::make('post')->with([
+				'blogLayoutContent'=>$this->pageLayoutContent
+			]);
 		}
 
-		//public function blogListing() {
-		//	$layoutContent = $this->createPageLayout('blog-post-listing');
-		//	$layoutContent = BlogPostListingPageController::createBlogListingPage($layoutContent);
-	    //		return view('post_listing', compact('layoutContent'));
-		//}
 
 		private function createPageLayout($url) {
 			$page = $this->retrievePage($url);
+
 			$layout = $this->retrievePageLayout($page);
 
 			$this->replaceLayoutTitle($layout,$page,$url);
@@ -51,10 +50,12 @@
 			$this->replaceLayoutPageContent($page);
 			$this->replacePageJavascriptContent($page);
 			$this->createBlogListing();
+
 		}
 
 		private function retrievePage($url) {
 			$where = Page::where('slug', $url);
+
 			if (! $where->exists())
 				throw new NotFoundHttpException;
 
