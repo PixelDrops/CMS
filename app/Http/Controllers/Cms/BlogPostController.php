@@ -16,6 +16,7 @@ class BlogPostController extends Controller {
     }
 
     public function index() {
+		var_dump($_SERVER['DOCUMENT_ROOT'].'/images/blog' );
         $BlogPosts = BlogPost::published();
 
         return view("cms.blog.index", compact('BlogPosts'));

@@ -10,7 +10,8 @@
             toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link pagebreak image jbimages",
             elements : "pagebreak",
             height: "500",
-            pagebreak_separator: "<!-- Blog Post Break -->"
+            pagebreak_separator: "<!-- Blog Post Break -->",
+            relative_urls: false
         });
     </script>
 

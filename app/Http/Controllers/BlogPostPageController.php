@@ -9,6 +9,7 @@ use App\Http\Requests;
 
 use App\BlogPost;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
 
 class BlogPostPageController extends Controller {
 
@@ -23,6 +24,7 @@ class BlogPostPageController extends Controller {
 
 	public static function createPageLayout($layoutContent, $slug) {
 		$blogPost = self::retrieveBlogPostFromSlug($slug);
+
 		$layoutContent = self::replaceLayoutTitle($layoutContent,$blogPost);
 		$layoutContent = self::replaceLayoutBlogTitle($layoutContent,$blogPost);
 		$layoutContent = self::replaceLayoutBlogPostContent($layoutContent, $blogPost);
@@ -41,8 +43,10 @@ class BlogPostPageController extends Controller {
 
 	private static function retrieveBlogPostFromId($id) {
 		$blogPost = BlogPost::where('blog_post_id',$id);
+
 		if (!$blogPost->exists())
-			return redirect('/')->withErrors('Blog Post could not be found');
+			Redirect::to('/')->send()->withErrors('Blog Post could not be found');
+
 		return $blogPost->first();
 	}
 

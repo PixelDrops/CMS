@@ -50,7 +50,6 @@
 			$this->replaceLayoutPageContent($page);
 			$this->replacePageJavascriptContent($page);
 			$this->createBlogListing();
-
 		}
 
 		private function retrievePage($url) {
@@ -101,6 +100,5 @@
 		private function createBlogListing() {
 			$Controller = new BlogPostListingPageController($this->pageLayoutContent);
 			$this->pageLayoutContent = $Controller->createBlogListingPage();
-
 		}
 	}

@@ -67,7 +67,7 @@ var jbImagesDialog = {
 			document.getElementById("upload_in_progress").style.display = 'none';
 			document.getElementById("upload_infobar").style.display = 'block';
 			document.getElementById("upload_infobar").innerHTML = tinyMCEPopup.getLang('jbimages_dlg.upload_complete', 0);
-			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '<img src="' + result.filename +'" />');
+			tinyMCEPopup.editor.execCommand('mceInsertContent', false, '<img class="img-responsive" src="' + result.filename +'" />');
 			tinyMCEPopup.close();
 		}
 	}
