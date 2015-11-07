@@ -12,16 +12,7 @@
 	| and give it the controller to call when that URI is requested.
 	|
 	*/
-
-	//Route::get('/', function () {
-	//	return "TODo - <a href='cms''>CMS</a>";
-	//});
-
-
-
 	Route::get('cms/settings', 'Cms\SettingsController@index');
-
-
 	//Route::get('cms/settings/content', 'Cms\SettingsContentController@index');
 	//Route::get('cms/settings/content/update/', 'Cms\SettingsContentController@update');
 
@@ -29,6 +20,7 @@
 
 	Route::resource('cms/layout', 'Cms\LayoutController');
 	Route::resource('cms/page', 'Cms\PageController');
+	Route::resource('cms/blog/category', 'Cms\CategoryController');
 	Route::resource('cms/blog', 'Cms\BlogPostController');
 	Route::resource('cms/user', 'Cms\UserController');
 

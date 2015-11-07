@@ -4,6 +4,7 @@
 
     Blog Posts
     <br><a href="/cms/blog/create">Create New Blog Post</a>
+     - <a href="/cms/blog/category">Categories</a>
 
     @foreach( $BlogPosts as $BlogPost)
         <article>
