@@ -16,9 +16,17 @@
 
 		public $timestamps = false;
 
-		public function scopeBlogPost($query) {
+		public function scopeRetrieveBlogPost($query) {
 			$query->where('type', 'Blog Post');
 			$query->orderBy('name');
 			return $query->get();
+		}
+
+		public function blogPost() {
+			return $this->belongsToMany('App\BlogPost', 'blog_post_category','blog_post_id');
+		}
+
+		public static function type($type) {
+			return Category::where('type', $type)->orderBy('name')->lists('name','category_id');
 		}
 	}

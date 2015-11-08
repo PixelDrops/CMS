@@ -32,4 +32,8 @@
 		public function author() {
 			return $this->belongsTo('App\User', 'user_id');
 		}
+
+		public function categories() {
+			return $this->belongsToMany('App\Category', 'blog_post_category', 'blog_post','category');
+		}
 	}

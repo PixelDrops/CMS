@@ -11,13 +11,13 @@
 				$table->increments('category_id');
 				$table->string('type');
 				$table->string('name');
-				$table->integer('parent')->unsigned();
+				$table->integer('parent')->unsigned()->nullable();
 				$table->string('url_friendly');
 				$table->text('description');
 			});
 
 			Schema::table('category', function ($table) {
-				$table->foreign('category_id')->references('category_id')->on('category')->onDelete('cascade');
+				$table->foreign('parent')->references('category_id')->on('category')->onDelete('cascade');
 			});
 		}
 

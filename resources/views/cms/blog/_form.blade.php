@@ -11,6 +11,10 @@
     {!!Form::select('layout', $layout,['class'=> 'form-control']) !!}
 </div>
 <div class="form-group">
+    {!! Form::label('Categories') !!}<br />
+    {!! Form::select('categories[]', $Categories, $SelectedCategories, ['class' => 'form-control', 'multiple' => 'multiple']) !!}
+</div>
+<div class="form-group">
     {!!Form::label('content', 'Body: ') !!}
     {!!Form::textarea('content', null,['class'=> 'form-control']) !!}
 </div>

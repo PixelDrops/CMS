@@ -11,7 +11,8 @@
 		// in order to display the posts in a specific layout
 
 		const BLOG_LISTING = '/{{%BLOG_LISTING\[[a-z0-9:{}]+\]%}}/';
-		const BLOG_DISPLAY_SIZE = '/{size:[\d]+}/';
+		const BLOG_DISPLAY_SIZE = '/{size:[\d]+}/'; // size: 5
+		const BLOG_DISPLAY_CATEGORIES = '/{categories:[\d]+}/'; // categories: 4,5,6
 		const BLOG_POST_BREAK = '<p><!-- Blog Post Break --></p>';
 
 		private $BlogPosts;

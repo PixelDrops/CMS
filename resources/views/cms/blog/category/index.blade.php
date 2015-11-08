@@ -3,6 +3,7 @@
 @section('content')
 
     Blog Post Category
+    <a href="/cms/blog">Blog Posts</a>
     <br><a href="/cms/blog/category/create">Create New Category</a>
 
     @foreach( $Categories as $Category)
@@ -15,6 +16,4 @@
                rel="nofollow" data-confirm="Are you sure you want to delete this?">Delete this entry</a>
         </article>
     @endforeach
-
-
 @stop
