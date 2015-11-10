@@ -58,13 +58,12 @@
 			$Categories = $this->getAllBlogPostCategories();
 			$SelectedCategories = $blogPost->categories()->lists('category')->toArray();
 
-			flash()->success("Blog Post has been updated");
 			return view('/cms/blog/edit', compact('blogPost', 'layout', 'Categories', 'SelectedCategories'));
 		}
 
 		public function update(BlogPost $blogPost, BlogPostRequest $request) {
 			$blogPost->update($request->all());
-
+			flash()->success("Blog Post has been updated");
 			return redirect('/cms/blog');
 		}
 

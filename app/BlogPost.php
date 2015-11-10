@@ -36,4 +36,12 @@
 		public function categories() {
 			return $this->belongsToMany('App\Category', 'blog_post_category', 'blog_post','category');
 		}
+
+		public function displayCategories() {
+			$categories = '';
+			foreach ($this->categories as $Category) {
+				$categories .= $Category->name . '-';
+			}
+			return $categories;
+		}
 	}
