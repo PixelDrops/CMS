@@ -10,9 +10,9 @@
 		// TODO Need to create a post template to be able to update this from the database
 		// in order to display the posts in a specific layout
 
-		const BLOG_LISTING = '/{{%BLOG_LISTING\[[a-z0-9:{}]+\]%}}/';
+		const BLOG_LISTING = '/{{%BLOG_LISTING\[[a-z0-9:{},]+\]%}}/';
 		const BLOG_DISPLAY_SIZE = '/{size:[\d]+}/'; // size: 5
-		const BLOG_DISPLAY_CATEGORIES = '/{categories:[\d]+}/'; // categories: 4,5,6
+		const BLOG_DISPLAY_CATEGORIES = '/{categories:[\d,]+}/'; // categories: 4,5,6
 		const BLOG_POST_BREAK = '<p><!-- Blog Post Break --></p>';
 
 		private $BlogPosts;
@@ -35,7 +35,25 @@
 		}
 
 		private function retrieveBlogPostsWithPagination() {
-			$this->BlogPosts = BlogPost::paginate($this->findBlogSize());
+			$BlogPosts = BlogPost::whereHas('categories', function ($query) {
+				$categories = $this->findDisplayCategories();
+				if (!is_null($categories))
+					$query->whereIn('category_id', $this->findDisplayCategories());
+			});
+
+			$this->BlogPosts = $BlogPosts->paginate($this->findBlogSize());
+		}
+
+		private function findDisplayCategories() {
+			preg_match(BlogPostListingPageController::BLOG_DISPLAY_CATEGORIES, $this->pageLayoutContent, $displaySizeCount);
+			if (sizeof($displaySizeCount) == 0)
+				return NULL;
+
+			preg_match('/[\d,]+/', $displaySizeCount[0], $displaySizeMatch);
+
+			// TODO perhaps add another check
+			return array_map("intval", explode(",", $displaySizeMatch[0]));
+
 		}
 
 		private function findBlogSize() {
@@ -51,20 +69,20 @@
 		}
 
 		private function createBlogPost() {
-			// TODO Createa an editable file for adding the blog post listing inorder to be easily updated
+			// TODO Create a an editable file for adding the blog post listing inorder to be easily updated
 			$this->blogLayoutContent = '<div class="blog-post-listing">';
 			foreach ($this->BlogPosts as $BlogPost) {
 				$this->blogLayoutContent .= '<div class="blog-post">';
-				$this->blogLayoutContent .= '<div class="blog-title"><a href="blog/'.$BlogPost->slug.'">'.$BlogPost->title.'</a></div>';
-				$this->blogLayoutContent .= '<div class="blog-content">'.$this->removeContentAfterPostPageBreak($BlogPost->content).'</div>';
+				$this->blogLayoutContent .= '<div class="blog-title"><a href="blog/' . $BlogPost->slug . '">' . $BlogPost->title . '</a></div>';
+				$this->blogLayoutContent .= '<div class="blog-content">' . $this->removeContentAfterPostPageBreak($BlogPost->content) . '</div>';
 				$this->blogLayoutContent .= '</div>';
 			}
 			$this->blogLayoutContent .= '</div>';
 		}
 
 		private function removeContentAfterPostPageBreak($content) {
-			if (strpos($content,BlogPostListingPageController::BLOG_POST_BREAK) !== false)
-				return substr($content,0, strpos($content, BlogPostListingPageController::BLOG_POST_BREAK));
+			if (strpos($content, BlogPostListingPageController::BLOG_POST_BREAK) !== FALSE)
+				return substr($content, 0, strpos($content, BlogPostListingPageController::BLOG_POST_BREAK));
 
 			return $content;
 		}
