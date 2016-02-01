@@ -10,7 +10,7 @@
 
 		protected $primaryKey = 'page_id';
 
-		protected $fillable = ['language', 'parent_page', 'author', 'status', 'visibility', 'slug', 'title', 'content', 'description', 'keyword'];
+		protected $fillable = ['language', 'parent_page', 'author', 'status', 'visibility', 'slug', 'title', 'content', 'description', 'keyword', 'javascript'];
 
 		protected $hidden = ['page_id'];
 
