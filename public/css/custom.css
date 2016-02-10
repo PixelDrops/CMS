@@ -93,6 +93,7 @@ a:hover {
 
 }
 
+
 img {
     display: block;
     height: auto;
@@ -389,6 +390,7 @@ figure.effect-portfolio:hover img {
 @media (max-width: 992px) {
     .logo-image {
         max-height: 300px;
+        display: inline;
     }
 }
 
