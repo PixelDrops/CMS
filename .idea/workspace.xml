@@ -2,112 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a7c5a07-7363-44dc-8789-befea6c01dc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/0004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/01_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/02.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/02_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/03.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/03_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/04_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/05_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/06_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/07_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/08.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/08_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/09.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/09_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1000351_450370638417406_760215471_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/10377288_582808511840284_883230659560434510_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/10501838_589802751140860_4223202347759105894_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/10502261_582308261890309_6909464987773439540_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/10544400_589802854474183_9019034104175621708_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1069348_447603358694134_1423503983_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/10_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1186200_450515085069628_40290778_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/11_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/12080_450756551712148_281738018_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/12_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1374112_447597578694712_2006071329_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1375662_447603508694119_891026117_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1378691_449938005127336_2147035810_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1379927_449893408465129_1502890008_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1379990_450366375084499_1306030286_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1380656_449937741794029_1533873395_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1381372_449891705131966_1916848879_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1381409_450367168417753_1204511567_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1381737_449938101793993_1251404462_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1382909_449891281798675_1481924184_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1383175_450371128417357_571787818_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1383252_450756241712179_1189346309_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1384300_450368808417589_433030917_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1384394_450755095045627_90105303_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1385082_450370371750766_1879542673_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1385270_447607862027017_1655286104_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1393562_450370591750744_1050274331_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1394261_449891688465301_1247263617_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1394412_450367358417734_1694853640_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1395140_447597222028081_301808295_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1395914_450756178378852_1840694472_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/13_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1450155_450754911712312_59155939_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1450772_450756335045503_1125316972_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1459804_456549494466187_1508567505_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/1463406_456549377799532_1108196247_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/14_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/15_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/16_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/17_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/18_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/19_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/20_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/21_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/22_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/23_t.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/24_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/25_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/26_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/27_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/christening/28_t.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/536937_449891155132021_515048097_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/554983_450756305045506_199532185_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/562317_447604015360735_6898060_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/969325_450368158417654_1368683960_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/996954_450367398417730_606611128_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/wedding/998314_450367611751042_1607677959_n.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/classie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/imagesloaded.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/masonry.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/modernizr-custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style6.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Page.php" afterPath="$PROJECT_DIR$/app/Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/custom.css" afterPath="$PROJECT_DIR$/public/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
@@ -135,20 +30,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Category.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="522" max-vertical-offset="666">
-                  <caret line="29" column="94" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="94" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/views/cms/blog/create.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="558">
+                <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="558">
                   <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding />
                 </state>
@@ -158,18 +43,48 @@
           <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/views/cms/page/edit.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="324">
+                <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
                   <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="2015_11_07_081033_db_create_blog_post_category.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="2015_11_07_081033_db_create_blog_post_category.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/database/migrations/2015_11_07_081033_db_create_blog_post_category.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.17156473" vertical-offset="0" max-vertical-offset="1259">
-                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="504">
+                  <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="post.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/post.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="162">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5207987" vertical-offset="1192" max-vertical-offset="7290">
+                  <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144">
+                  <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -178,7 +93,7 @@
           <file leaf-file-name="_form.blade.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resources/views/cms/page/_form.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="990">
+                <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="990">
                   <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
                   <folding />
                 </state>
@@ -189,7 +104,7 @@
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostListingPageController.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1692">
-                  <caret line="54" column="71" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
+                  <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
                   <folding>
                     <element signature="e#42#59#0#PHP" expanded="true" />
                   </folding>
@@ -200,21 +115,9 @@
           <file leaf-file-name=".env" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.env">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+                <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="450">
                   <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BlogPost.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/BlogPost.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="972">
-                  <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#25#43#0#PHP" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -223,33 +126,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="BlogPostController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cms/BlogPostController.php">
+          <file leaf-file-name="BlogPostPageController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostPageController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1404">
-                  <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-                  <folding>
-                    <element signature="e#46#63#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HomePageController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomePageController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1908">
-                  <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/readme.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
-                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.3923948" vertical-offset="415" max-vertical-offset="1674">
+                  <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -258,7 +139,7 @@
           <file leaf-file-name="server.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="396">
+                <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="396">
                   <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                   <folding />
                 </state>
@@ -268,17 +149,17 @@
           <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cms/PageController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="1332">
+                <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1332">
                   <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Page.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Page.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/Page.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.33226323" vertical-offset="0" max-vertical-offset="1246">
+                <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="972">
                   <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding />
                 </state>
@@ -349,7 +230,6 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/post.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomePageController.php" />
-        <option value="$PROJECT_DIR$/public/css/custom.css" />
         <option value="$PROJECT_DIR$/public/js/cms/tinymce/plugins/jbimages/config.php" />
         <option value="$PROJECT_DIR$/resources/views/cms/blog/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cms/blog/edit.blade.php" />
@@ -378,6 +258,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlogPostListingPageController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Cms/PageController.php" />
         <option value="$PROJECT_DIR$/app/Page.php" />
+        <option value="$PROJECT_DIR$/public/css/custom.css" />
       </list>
     </option>
   </component>
@@ -391,9 +272,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="2560" />
-    <option name="height" value="1444" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -465,6 +346,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -519,7 +401,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -544,36 +448,6 @@
               <option name="myItemId" value="cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -599,7 +473,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,17 +487,96 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -711,18 +664,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="2560" height="1444" extended-state="6" />
+    <frame x="0" y="24" width="2560" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14570312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14677805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -781,20 +734,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_06_105842_db_create_layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1286">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_06_105715_db_create_user_social_network.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1286">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_09_06_105843_db_create_page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.666666" vertical-offset="0" max-vertical-offset="918">
@@ -834,20 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.085782364" vertical-offset="0" max-vertical-offset="1259">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/post_listing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042891182" vertical-offset="0" max-vertical-offset="1259">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028594123" vertical-offset="0" max-vertical-offset="1259">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -953,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="630">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,24 +888,6 @@
           <folding>
             <element signature="e#46#63#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cms/BlogPostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1404">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding>
-            <element signature="e#46#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostPageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="828" max-vertical-offset="1674">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="666">
           <caret line="29" column="94" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,32 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomePageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1908">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="594">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostListingPageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1692">
-          <caret line="54" column="71" selection-start-line="54" selection-start-column="71" selection-end-line="54" selection-end-column="71" />
-          <folding>
-            <element signature="e#42#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
@@ -1083,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cms/blog/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.666666" vertical-offset="0" max-vertical-offset="558">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="558">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
@@ -1091,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="396">
+        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="396">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
@@ -1099,16 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cms/page/_form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="990">
+        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="990">
           <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/post.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1286">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1117,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1286">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55758536" vertical-offset="0" max-vertical-offset="1259">
           <caret line="39" column="27" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,29 +1002,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1273">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cms/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="0" max-vertical-offset="1332">
+        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="1332">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33226323" vertical-offset="0" max-vertical-offset="1246">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/cms/page/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0" vertical-offset="0" max-vertical-offset="324">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="324">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -1163,8 +1023,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_11_07_081033_db_create_blog_post_category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17156473" vertical-offset="0" max-vertical-offset="1259">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="504">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="972">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1263">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostListingPageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1692">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding>
+            <element signature="e#42#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/post_listing.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.014563107" vertical-offset="0" max-vertical-offset="1236">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomePageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48487327" vertical-offset="685" max-vertical-offset="1908">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Cms/BlogPostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028618151" vertical-offset="181" max-vertical-offset="1404">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24979591" vertical-offset="0" max-vertical-offset="1225">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogPostPageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3923948" vertical-offset="415" max-vertical-offset="1674">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/post.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="162">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5207987" vertical-offset="1192" max-vertical-offset="7290">
+          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
           <folding />
         </state>
       </provider>

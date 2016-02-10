@@ -97,6 +97,11 @@ a:hover {
     height: 600px;
 }
 
+.blog-title {
+    text-align: center;
+    font-size: 20px;
+}
+
 
 /**************************
 ******** Portfolio ********
